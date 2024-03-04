@@ -11,6 +11,6 @@ public class Flashcard {
     }
 
     public String toApkgString() {
-        return "\"" + question + "\""+ ",\"" + answer + "\"";
+        return "\"" + question + "\""+ ",\"" + answer + "\"\n";
     }
 }
