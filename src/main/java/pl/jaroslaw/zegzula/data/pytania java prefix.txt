@@ -1,0 +1,23 @@
+[Pytanie] Co to jest JVM?
+
+[Odpowiedź] JVM (Java Virtual Machine) jest środowiskiem uruchomieniowym używanym do wykonywania programów napisanych w języku Java. Przetwarza kod bajtowy (bytecode) generowany przez kompilator Javy na konkretnej platformie i zapewnia środowisko, w którym programy Java mogą być uruchamiane.
+
+[Pytanie] Czym różni się klasa od obiektu w Javie?
+
+[Odpowiedź] Klasa w Javie to szablon lub wzorzec, który definiuje cechy i zachowanie obiektu. Jest to abstrakcyjny koncept. Z drugiej strony, obiekt to instancja klasy. Oznacza to, że obiekt jest konkretnym egzemplarzem klasy, który może przechowywać dane i wykonywać operacje zdefiniowane przez tę klasę.
+
+[Pytanie] Jaka jest różnica między interfejsem a klasą abstrakcyjną w Javie?
+
+[Odpowiedź]  Klasa abstrakcyjna w Javie może zawierać metody abstrakcyjne (bez implementacji) oraz metody konkretne (z implementacją), podczas gdy interfejs może zawierać tylko metody abstrakcyjne i stałe. Klasa abstrakcyjna może również zawierać zmienne instancji, ale interfejs nie może. Klasa abstrakcyjna może dziedziczyć po innej klasie abstrakcyjnej lub implementować interfejsy, podczas gdy interfejsy mogą rozszerzać inne interfejsy.
+
+[Pytanie] Co to jest wyjątek w Javie? Jak obsługiwać wyjątki?
+
+[Odpowiedź]  Wyjątek w Javie to sytuacja, która zakłóca normalny przepływ wykonania programu. Wyjątki mogą być wywoływane przez jądro Javy lub przez kod użytkownika. Aby obsłużyć wyjątki w Javie, używamy bloków try-catch, gdzie potencjalnie problematyczny kod jest umieszczony w bloku try, a kod obsługi wyjątku jest umieszczony w jednym lub więcej blokach catch.
+
+[Pytanie] Czym różnią się ArrayList i LinkedList w Javie?
+
+[Odpowiedź]  ArrayList i LinkedList są dwoma implementacjami interfejsu List w Javie. ArrayList jest oparta na tablicy, co oznacza, że jest skuteczniejsza w dostępie do elementów za pomocą indeksów, ale mniej wydajna w dodawaniu i usuwaniu elementów na początku lub środku listy. LinkedList jest oparta na liście dwukierunkowej, co sprawia, że dodawanie i usuwanie elementów na początku lub środku listy jest bardziej wydajne, ale dostęp do elementów za pomocą indeksów jest mniej wydajny.
+
+[Pytanie] Jakie są różnice między zmiennymi statycznymi a zmiennymi instancji (instancji) w Javie?
+
+[Odpowiedź]  Zmienna statyczna jest związana z klasą, podczas gdy zmienna instancji jest związana z konkretną instancją klasy. Zmienna statyczna jest współdzielona przez wszystkie instancje klasy i może być wywoływana bez konieczności tworzenia instancji klasy. Zmienna instancji jest unikalna dla każdej instancji klasy i jest dostępna tylko w kontekście konkretnej instancji.
