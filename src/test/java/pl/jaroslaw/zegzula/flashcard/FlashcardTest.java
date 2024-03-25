@@ -14,10 +14,12 @@ class FlashcardTest {
         "Paris. It is also the largest city in France and serves as the country's economic and cultural center.";
     Flashcard flashcard = new Flashcard(question, answer);
     // when
-    String apkgString = flashcard.toApkgString();
+    String apkgString = flashcard.flashcardToString();
     // then
     String expected =
-        "\"What is the capital of France?\",\"Paris. It is also the largest city in France and serves as the country's economic and cultural center.\"";
+            """
+                "What is the capital of France?","Paris. It is also the largest city in France and serves as the country's economic and cultural center."
+                """;
     assertEquals(expected, apkgString);
   }
 }

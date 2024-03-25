@@ -22,11 +22,10 @@ class FlashcardsDeckTest {
     FlashcardsDeck flashcardsDeck = new FlashcardsDeck(flashcards);
 
     // when
-    String result = flashcardsDeck.toApkgString();
+    String result = flashcardsDeck.deckToString();
     // then
     String expected =
         """
-                "Front","Back"
                 "What is the capital of France?","Paris. It is also the largest city in France and serves as the country's economic and cultural center."
                 "What is the capital of Germany?","Berlin. It is the largest city in Germany and has a population of 3.7 million people."
                 """;

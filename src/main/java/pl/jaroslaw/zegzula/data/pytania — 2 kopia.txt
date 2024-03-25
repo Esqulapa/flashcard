@@ -1,0 +1,49 @@
+[Pytanie] Czy można zmienić obiekt immutable?
+
+[Odpowiedź] Jak sama nazwa wskazuje, nie można modyfikować obiektów klasy immutable.
+
+[Pytanie] Czy można nadpisać metodę private lub static?
+
+[Odpowiedź] Nie da się nadpisać metody private ani metody static, ponieważ nie są one częścią żadnego obiektu klasy, a elementem samej klasy.
+
+[Pytanie] Czy program może być wykonany bez metody main()?
+
+[Odpowiedź]  Można uruchomić program bez metody main(), lecz wyłącznie w jednym przypadku – jeśli kod zostanie w całości napisany w statycznym bloku inicjalizacyjnym. W każdej innej sytuacji program bez funkcji main() nie zostanie uruchomiony.
+
+[Pytanie]Jakie typy obszarów pamięci są przydzielane przez JVM?
+
+[Odpowiedź] JVM przydziela trzy obszary pamięci. Są to:
+obszar stosu – zawierający zmienne lokalne i wyniki pośrednie;
+obszar klasy – przechowujący struktury klas, kod metod oraz dane pól inicjowanych podczas uruchamiania programu;
+obszar sterty – w którym znajdują się wszystkie obiekty stworzone przez programistę.
+ 
+[Pytanie]Omów elementy twierdzenia public static void main(String args[]).
+
+[Odpowiedź]  To zadanie, które może pojawić się na początku rozmowy rekrutacyjnej. Sprawdza, czy kandydat rozumie, z jakich elementów składa się język Java. A zatem:
+
+public – to modyfikator dostępu. Określa, jaka klasa może mieć dostęp do danej metody. W tym przypadku dostęp ma każda klasa;
+static – informuje, że metoda jest używana bez tworzenia obiektu klasy;
+void – określenie, że metoda nie zwraca żadnej wartości;
+main – nazwa metody. W tej metodzie następuje główne wykonanie;
+String args[] – parametr przekazywany do metody głównej.
+
+[Pytanie] Czym jest JIRA?
+
+[Odpowiedź] JIRA to narzędzie służące do planowania, śledzenia procesu tworzenia oraz wdrażania wysokiej jakości oprogramowania. W ten sposób Java Developerzy mogą usprawnić swoją pracę.
+
+[Pytanie]Czym jest anonimowa klasa w Javie i kiedy się ją stosuje?
+
+[Odpowiedź]W języku Java anonimowa klasa to taka, która nie ma nazwy i zostaje zdefiniowana w miejscu użycia. Można jej użyć, aby zdefiniować implementację interfejsu albo rozszerzenie klasy abstrakcyjnej w danym miejscu bez tworzenia oddzielnej klasy.
+
+[Pytanie]  Jaka jest różnica między throw i throws?
+
+[Odpowiedź]Słowo kluczowe throw jest używane do bezpośredniego zgłaszania wyjątku z metody lub jakiegokolwiek innego bloku kodu. Natomiast słowo throws używane jest w sygnaturze metody do deklarowania wyjątku, który może wystąpić w twierdzeniach obecnych w metodzie.
+
+
+[Pytanie]Jaka jest różnica między klasami String, StringBuilder i StringBuffer?
+
+[Odpowiedź]String to klasa stała, której zawartości nie można modyfikować. StringBuilder to synchronizowana klasa zmienna, której zawartość można zmodyfikować po utworzeniu. Natomiast StringBuffer jest niesynchronizowaną klasą zmienną.
+
+[Pytanie]Jaka jest różnica między klasami String, StringBuilder i StringBuffer?
+
+[Odpowiedź]String to klasa stała, której zawartości nie można modyfikować. StringBuilder to synchronizowana klasa zmienna, której zawartość można zmodyfikować po utworzeniu. Natomiast StringBuffer jest niesynchronizowaną klasą zmienną.

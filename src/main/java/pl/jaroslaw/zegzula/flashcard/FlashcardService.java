@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class FlashcardService {
 
-  public static final String ANSWER_REGEX = "\\s*\\[Odpowiedź\\]\\s";
-  private final String QUESTION_PREFIX_REGEX = "\\s*\\[Pytanie\\]\\s";
+  public static final String ANSWER_REGEX = "\\s*\\[Odpowiedź\\]";
+  private final String QUESTION_PREFIX_REGEX = "\\s*\\[Pytanie\\]";
 
   public FlashcardsDeck createFlashcardsDeck(List<String> questions) {
     return toFlashcardDeck(questions);

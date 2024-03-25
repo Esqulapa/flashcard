@@ -19,18 +19,18 @@ class FlashcardServiceTest {
   @Test
   void shouldCreateDeckFromGivenFile() throws IOException {
     // given
-    String filePath = "src/main/java/pl/jaroslaw/zegzula/data/pytania java prefix.txt";
+    String filePath = "src/main/java/pl/jaroslaw/zegzula/data/pytania — 2 kopia.txt";
 
     byte[] bytes = Files.readAllBytes(Paths.get(filePath));
 
     MockMultipartFile file =
-        new MockMultipartFile("file", "pytania java prefix.txt", "text/plain", bytes);
+        new MockMultipartFile("file", "pytania — 2 kopia.txt", "text/plain", bytes);
 
     // when
     FlashcardsDeck deck =
         flashcardService.createFlashcardsDeck(new MultipartToStringMapper(file).toListOfStrings());
 
     // then
-    Assertions.assertEquals(6, deck.length());
+    Assertions.assertEquals(9, deck.length());
   }
 }

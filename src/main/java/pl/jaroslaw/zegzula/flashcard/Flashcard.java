@@ -10,7 +10,7 @@ public class Flashcard {
     this.answer = answer;
   }
 
-  public String toApkgString() {
+  public String flashcardToString() {
     return "\"" + question + "\"" + ",\"" + answer + "\"\n";
   }
 }

@@ -25,6 +25,6 @@ public class FlashcardController {
     List<String> listOfStrings = new MultipartToStringMapper(file).toListOfStrings();
 
     return ResponseEntity.ok()
-        .body(flashcardService.createFlashcardsDeck(listOfStrings).toApkgString());
+        .body(flashcardService.createFlashcardsDeck(listOfStrings).deckToString());
   }
 }
